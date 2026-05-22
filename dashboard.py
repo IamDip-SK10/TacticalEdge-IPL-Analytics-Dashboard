@@ -1,7 +1,7 @@
 """
 ╔══════════════════════════════════════════════════════════════════════════════════╗
-║          IPL ANALYTICS DASHBOARD — PREMIUM GLASS UI EDITION                      ║
-║                   Ball-by-Ball Intelligence Engine                               ║
+║          IPL ANALYTICS DASHBOARD — PREMIUM GLASS UI EDITION                                     ║
+║                   Ball-by-Ball Intelligence Engine                                              ║
 ╚══════════════════════════════════════════════════════════════════════════════════╝
 Run:  streamlit run dashboard.py
 Requires: streamlit, pandas, plotly, numpy
