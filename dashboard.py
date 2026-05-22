@@ -437,9 +437,10 @@ st.markdown(
 # 2. DATA LOADING & CACHING
 # ─────────────────────────────────────────────────────────────────────────────
 @st.cache_data(show_spinner=False)
-def load_data(path: str = "data/ipl_matches.csv") -> pd.DataFrame:
+def load_data(path: str = "data/ipl_matches.zip") -> pd.DataFrame:
     """Load ball-by-ball IPL dataset with robust type handling."""
     df = pd.read_csv(
+        compression="zip",
         path,
         dtype={
             "match_id": str,
