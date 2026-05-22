@@ -440,8 +440,8 @@ st.markdown(
 def load_data(path: str = "data/ipl_matches.zip") -> pd.DataFrame:
     """Load ball-by-ball IPL dataset with robust type handling."""
     df = pd.read_csv(
-        compression="zip",
         path,
+        compression="zip",
         dtype={
             "match_id": str,
             "season": str,
