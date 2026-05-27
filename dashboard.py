@@ -1749,40 +1749,25 @@ elif page == "🎯  Strategic Match Simulator":
 # ─────────────────────────────────────────────────────────────────────────────
 # MOBILE QUICK NAVIGATION
 # ─────────────────────────────────────────────────────────────────────────────
-
 st.markdown("""
 <style>
 
 .stButton > button{
-
 background:rgba(255,255,255,0.04)!important;
-
 border:1px solid rgba(255,255,255,0.08)!important;
-
 color:#f0f2f5!important;
-
 border-radius:12px!important;
-
 backdrop-filter:blur(10px);
-
 height:46px;
-
 font-family:'DM Sans';
-
 font-size:0.82rem;
-
 transition:0.3s;
-
 }
 
 .stButton > button:hover{
-
 background:rgba(255,255,255,0.07)!important;
-
 border-color:rgba(255,255,255,0.15)!important;
-
 transform:translateY(-2px);
-
 }
 
 </style>
@@ -1813,21 +1798,24 @@ c1,c2,c3,c4 = st.columns(4)
 with c1:
     if st.button("📊 View", use_container_width=True):
         st.session_state.mobile_page="📊  Executive View"
+        st.rerun()
 
 with c2:
     if st.button("🏆 Teams", use_container_width=True):
         st.session_state.mobile_page="🏆  Franchise & Player Profiles"
+        st.rerun()
 
 with c3:
     if st.button("⚡ Phase", use_container_width=True):
         st.session_state.mobile_page="⚡  Phase-Wise Analytics"
+        st.rerun()
 
 with c4:
     if st.button("🎯 Sim", use_container_width=True):
         st.session_state.mobile_page="🎯  Strategic Match Simulator"
+        st.rerun()
 
 page = st.session_state.mobile_page
-
 
 # ─────────────────────────────────────────────────────────────────────────────
 # FOOTER
