@@ -1746,6 +1746,41 @@ elif page == "🎯  Strategic Match Simulator":
         fig_td.update_yaxes(title_text="Number of Matches")
         st.plotly_chart(fig_td, use_container_width=True)
 
+st.markdown("---")
+
+st.markdown(
+"""
+<div style="
+text-align:center;
+font-family:DM Sans;
+font-size:0.75rem;
+color:#8b949e;
+margin-bottom:10px;
+">
+Quick Navigation
+</div>
+""",
+unsafe_allow_html=True
+)
+
+mobile_nav = st.columns(4)
+
+with mobile_nav[0]:
+    if st.button("📊 KPI"):
+        page="📊  Executive View"
+
+with mobile_nav[1]:
+    if st.button("🏆 Teams"):
+        page="🏆  Franchise & Player Profiles"
+
+with mobile_nav[2]:
+    if st.button("⚡ Phase"):
+        page="⚡  Phase-Wise Analytics"
+
+with mobile_nav[3]:
+    if st.button("🎯 Match"):
+        page="🎯  Strategic Match Simulator"
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # FOOTER
